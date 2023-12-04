@@ -158,7 +158,9 @@ window.addEventListener('click', (e) => {
   if(floatSliderWrap.contains(e.target)) {
     return;
   } else {
-    blackBg.classList.remove('on')
-    floatSliderWrap.classList.remove('on')
+    if(blackBg.classList.contains('on')) {
+      blackBg.classList.remove('on')
+      floatSliderWrap.classList.remove('on')
+    }
   }
 })
