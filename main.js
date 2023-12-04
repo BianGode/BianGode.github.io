@@ -151,7 +151,7 @@ const floatSliderWrap = document.querySelector('.sliderFloatWrap')
 slider.addEventListener('click', () => {
   blackBg.classList.add('on')
   floatSliderWrap.classList.add('on')
-
+  console.log('testt');
 })
 
 window.addEventListener('click', (e) => {
